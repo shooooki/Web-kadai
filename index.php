@@ -9,7 +9,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     header('Location: login.php');
     exit();
 }
-
+$id = id();
 $db = dbconnect();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
